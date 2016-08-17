@@ -1,0 +1,64 @@
+$base_color:deeppink;
+$yh:"微软雅黑","Microsoft yahei";
+@import "reset.css";
+@import "swiper-3.3.1.min.css";
+@import "myscroll";
+body,html{
+    width:100%;
+    height:100%;
+    //background:#f3eff0;
+}
+
+@mixin box ($box-sizing) {
+    -webkit-box-sizing:$box-sizing;
+    -moz-box-sizing:$box-sizing;
+    -ms-box-sizing:$box-sizing;
+    -o-box-sizing:$box-sizing;
+    box-sizing:$box-sizing;
+}
+
+@mixin carton($width,$height,$top,$left,$z){
+   position: absolute;
+    width: pxToRem($width);
+    height: pxToRem($height);            
+    top: pxToRem($top);
+    left: pxToRem($left);
+    z-index: $z;
+    opacity: 1;
+    color: rgb(103, 103, 103);
+    border: 0px solid rgb(0, 0, 0);
+    padding-bottom: 0px;
+    padding-top: 0px;
+    line-height: 1;
+    border-radius: 0px;
+    transform: none;
+    box-shadow: rgba(0, 0, 0, 0.498039) 0px 0px 0px;            
+}
+
+header{
+    height: 1.28rem;
+    width: 100%;
+    background: #dc4067;
+    padding-top: 0.4rem;
+    text-align: center;
+    line-height: 1.68rem;
+    font-size: .32rem;
+    position: relative;
+    color: #fff;
+    border-bottom:1px solid #949494 ;
+    span{
+        width: .42rem;
+        height: .36rem;
+        position: absolute;
+        top: .66rem;
+    }
+    .left{
+        left: .27rem;
+        background: url(../img/show2.png) no-repeat;
+    }
+    .right{
+        right: .27rem;
+        background: url(../img/show2.png) no-repeat;
+    }
+}
+

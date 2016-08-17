@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>值得买</title>
+		<link rel="stylesheet" type="text/css" href="../css/worthBuy.css"/>
+	</head>
+	<body>
+		<header>最新上架</header>
+		<section>
+			<div class="swiper-container" id="l-swiper1">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">最新上架</div>
+					<div class="swiper-slide">时尚女装</div>
+					<div class="swiper-slide">居家</div>
+					<div class="swiper-slide">男装</div>
+					<div class="swiper-slide">吃不胖</div>
+					<div class="swiper-slide">魔法镜</div>
+					<div class="swiper-slide">爱运动</div>
+					<div class="swiper-slide">熊孩子</div>
+					<div class="swiper-slide">数码控</div>
+				</div>
+			</div>
+			<div class="l-list">
+				<ul class="l-theList">
+					<li>
+						<img src="../img/l2_02.jpg"/>
+						<div class="l-little-title">
+							<p class="l-t">心机单品巧遮手臂</p>
+							<p class="l-made">Made on August 15</p>
+						</div>
+					</li>
+					<li>
+						<img src="../img/l2_03.png"/>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</body>
+</html>
+<script src="../js/sea.js"></script>
+<script src="../js/worthBuy.js"></script>
+<script>
+	seajs.use(["worthBuy"],function(app){
+		app.init();
+	})
+</script>
